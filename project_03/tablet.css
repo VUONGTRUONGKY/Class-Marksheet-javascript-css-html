@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+}
+
+#wrapper {
+	width: 100%;
+	height: auto;
+}
+
+[class*="col-"] {
+float: left;
+}
+
+.row::after {
+content: "";
+clear: both;
+display: inline-block;
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+	.col-t-01 {width: 8.33%;}
+	.col-t-02 {width: 16.66%;}
+	.col-t-03 {width: 25%;}
+	.col-t-04 {width: 33.33%;}
+	.col-t-05 {width: 41.66%;}
+	.col-t-06 {width: 50%;}
+	.col-t-07 {width: 58.33%;}
+	.col-t-08 {width: 66.66%;}
+	.col-t-09 {width: 75%;}
+	.col-t-10 {width: 83.33%;}
+	.col-t-11 {width: 91.66%;}
+	.col-t-12 {width: 100%;}
+
+	hr {border: 0px;}
+
+	#input {
+		width: 100%;
+		border: 2px black solid;
+		background-color: skyblue;
+		font-family: Timenewromance;
+		height: 20vw;
+	}
+
+	button {
+		width: 20vw;
+		height: 4vw;
+		background-color: skyblue;
+	}
+
+	.text {
+		font-size: 1.4vw;
+	}
+
+	table, tr, th, td {
+		border: 1px skyblue solid;
+		border-collapse: collapse;
+		text-align: center;
+		font-size: 1.6vw;
+	}
+
+	table {
+		width: 100%;
+	}
+	#padding {
+		padding-left: 35%;
+	}
+
+}

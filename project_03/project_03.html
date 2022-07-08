@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen and (min-device-width: 992px)" href="project_03.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 768px)" href="tablet.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 767px)" href="mobile.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Class Marksheet</title>
+	<script type="text/javascript" src="project_03.js"></script>
+</head>
+<body>
+	<h1 style="text-align: center; font-size: 4vw; text-decoration: underline;">Class Marksheet</h1>
+	<div id="input" class="row">
+		<div class="input_01 .col-d-06 .col-m-06 .col-t-06" id="padding">
+			<p class="text">Họ Tên: </p><input type="textbox" id = "name">
+			<p class="text">Điểm Toán: </p><input type="textbox" id = "score_m"><hr>
+		</div>
+		<div class="input_01 .col-d-06 .col-m-06 .col-t-06">
+			<p class="text">Điểm Lý: </p><input type="textbox" id = "score_p">
+			<p class="text">Điểm Hóa: </p><input type="textbox" id = "score_c"><hr>
+		</div>
+	</div>
+	<button id = "getInfo"><p class="text">Nhập</p></button>
+	<hr>
+		<table id="info_table" class=".col-d-12 .col-l-12 .col-m-12">
+			<tbody>
+				<tr>
+					<th width="10%">STT</th>
+					<th width="30%">Họ tên</th>
+					<th width="10%">Toán</th>
+					<th width="10%">Lý</th>
+					<th width="10%">Hóa</th>
+					<th width="10%">Trung Bình</th>
+					<th width="10%">Xếp Loại</th>
+				</tr>
+			</tbody>
+		</table>
+	<button id = "mediumScore"><p class="text">Tính điểm trung bình</p></th></button>
+	<button id = "goodStudent"><p class="text">Xác định học sinh giỏi</p></button>
+	<button id = "cleanRow"><p class="text">Xóa Hàng</p></button>
+	<button id= "cleanAll"><p class="text">Xóa Hết</p></button>
+	<p id = "test"></p>
+</body>
+</html>
